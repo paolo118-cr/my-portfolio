@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<style>
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation */
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Content */
+.site-content {
+    padding: 2rem 0;
+}
+
+.content-area {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Table of Contents */
+.page-nav {
+    background: #eaeaea;
+    text-align: center;
+    padding: 1rem;
+}
+
+.page-nav a {
+    margin: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    background: #667eea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title"><a href="#home">My Portfolio</a></h1>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#samples">Samples</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- TABLE OF CONTENTS / INDEX -->
+<nav class="page-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#courses">Course Descriptions</a>
+    <a href="#samples">Course Work Samples</a>
+    <a href="#education-plan">Education Plan</a>
+    <a href="#awards">Degrees & Certificates</a>
+    <a href="#evaluation">Evaluation</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>“Technology is best when it brings people together.”</p>
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>About Me</h2>
+            <!-- Professional photo -->
+            <!-- Resume link -->
+            <!-- LinkedIn link -->
+            <!-- Personal philosophy -->
+            <!-- Professional goals -->
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Contact</h2>
+            <!-- Contact form will go here -->
+        </div>
+    </div>
+</section>
+
+<!-- COURSE DESCRIPTIONS -->
+<section id="courses" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Course Descriptions</h2>
+            <!-- Course table will go here -->
+        </div>
+    </div>
+</section>
+
+<!-- COURSE WORK SAMPLES -->
+<section id="samples" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Samples of Course Work</h2>
+            <!-- Projects, assignments, videos, reflections -->
+        </div>
+    </div>
+</section>
+
+<!-- STUDENT EDUCATION PLAN -->
+<section id="education-plan" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Student Education Plan</h2>
+            <!-- Software Development Degree (A25590C) -->
+        </div>
+    </div>
+</section>
+
+<!-- DEGREES / CERTIFICATES / AWARDS -->
+<section id="awards" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Degrees, Certificates, and Awards</h2>
+            <!-- Upload degree and certificates -->
+        </div>
+    </div>
+</section>
+
+<!-- EVALUATION PAGE -->
+<section id="evaluation" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Portfolio Evaluation</h2>
+            <!-- Evaluation questionnaire or survey -->
+        </div>
+    </div>
+</section>
+
+<!-- REFLECTION -->
+<section id="reflection" class="site-content">
+    <div class="container">
+        <div class="content-area">
+            <h2>Reflection</h2>
+            <!-- Final reflection -->
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer"></footer>
+
+<script>
+/* Smooth scrolling */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
 
